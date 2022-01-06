@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600&family=Pinyon+Script&display=swap');
+*{padding:0; margin:0; box-sizing: border-box; font-family: 'Noto Serif KR', serif; font-size: 16px; text-align: center;}
+/* font-family: 'Pinyon Script', cursive; */
+ul, ol{list-style: none;}
+img{max-width: 100%;}
+a{text-decoration: none;color: inherit;}
+button{border:0; background: transparent;}
+
+.mgt-50{margin-top:50px;}
+.pdt-0{padding-top:0;}
+.clr-1{color:#2c3640}
+
+
+body{
+    background: #ddd;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 480px;
+    width: 100%;
+    /* background: url('../img/bg2.jpg') center top repeat; */
+    background: #fafafa;
+    margin: 0 auto;
+}
+.inner_wrap{
+    width: 100%;
+    padding:60px 30px;
+    color:#666;
+}
+
+.inner_wrap h3{
+    margin-bottom:30px;
+    font-size: 20px;
+    font-weight: 400;
+    color:#2c3640;
+}
+section.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+section.main .inner_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px;
+}
+
+section.main .inner_wrap > *{
+    display: flex;
+    width: 100%;
+}
+
+section.main .tit{
+    font-size: 19px;
+    line-height: 1.8;
+    color:#2c3640;
+    height: calc((100% - 74%) / 2);
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+}
+section.main span{
+    font-family: 'Pinyon Script', cursive;
+    opacity: 0.7;
+    margin:0 10px;
+}
+
+section.main .img_wrap{
+    width: 100%;
+    height: 74%;
+    overflow: hidden;
+    background: url("../img/main1.jpg") no-repeat center bottom / cover;
+}
+
+section.main .img_wrap.index2{
+    background: url("../img/main2.jpg") no-repeat center / cover;
+}
+
+section.main .txt_wrap{
+    height: calc((100% - 74%) / 2);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #676f76;
+}
+
+section.main .txt_wrap > p{
+    font-size: 15px;
+    padding-bottom: 4px;
+}
+
+section.wedding_info .tit{
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+section.intro .inner_wrap{
+    padding-top:0;
+}
+
+section.intro .quote{
+    text-align: left;
+    padding: 10%;
+    margin-top:50px;
+    border: 1px solid #ece5e0;
+}
+
+
+section.intro .quote p{
+    margin-bottom:30px;
+    font-size: 0.825rem;
+    text-align: left;
+    color: #868686;
+    /* color:#b2a395; */
+    word-break: keep-all;
+}
+
+section.intro .quote span{
+    font-size: 13px;
+    text-align: right;
+    display: block;
+}
+
+section.intro .addment{
+    margin-top: 100px;
+}
+
+section.intro ul.family{
+    padding: 30px 0;
+    border-top: 1px solid #efe3da;
+    border-bottom: 1px solid #efe3da;
+    max-width: 260px;
+    margin: 100px auto 0;
+}
+
+section.intro ul.family li{
+    letter-spacing: 1.1px;
+}
+
+section.intro ul.family li span{
+    font-size: 70%;
+    opacity: 0.7;
+    display: inline-block;
+    width: 46px;
+    text-align: left;
+    margin-left: 8px;
+}
+
+section.gallery .inner_wrap{
+    padding:50px 10px;
+}
+
+section.gallery ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.gallery ul li{
+    width: calc(100% / 3);
+    font-size: 0;
+    padding:2px;
+}
+
+
+section.calendar table.jan{
+    width: 100%;
+    border-spacing: 0;
+    padding:0 20px;
+    margin-top: 50px;
+}
+section.calendar table.jan th{
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+section.calendar table.jan td{
+    text-align: center;
+    padding:10px 5px;
+    font-size: 13px;
+    position: relative;
+    width: 30px;
+}
+
+section.calendar table.jan td.dday{
+    color:#FFF;
+}
+
+section.calendar table.jan td.dday::before{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: #a99c94;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+}
+
+section.map ul.wayto{
+    margin-top:30px;
+}
+
+section.map ul.wayto *{
+    text-align: left;
+}
+
+section.map ul.wayto li{
+    margin-bottom:15px;
+    font-size:14px;
+    color:#818181;
+}
+
+section.map ul.wayto li.tit{
+    font-size:17px;
+    font-weight: 700;
+    margin-bottom:15px;
+    color:#2c3640;
+}
+
+section.map ul.wayto li.notice p{
+    font-size: 13px;
+    position: relative;
+    padding-left: 15px;
+}
+section.map ul.wayto li.notice p::before{
+    content: '※';
+    width: 15px;
+    height: 15px;
+    display:block;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+section.map .bold{
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+section.map .sub{
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+section.map .btn_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+section.map .btn_wrap a{
+    padding:8px 15px;
+    background-color: #ccc2bc;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 5px;
+    margin:0 5px;
+}
+
+section.map .btn_wrap a > i{
+    margin-left: 7px;
+    opacity: 0.5;
+    font-size: 10px;
+}
+
+.root_daum_roughmap{
+    width: 100% ! important;
+}
+.root_daum_roughmap .wrap_map{
+    width: 100% ! important;
+}
+
+.root_daum_roughmap .wrap_controllers .wrap_btn_roadview .txt{
+    font-size:12px;
+}
+
+.root_daum_roughmap .wrap_controllers{
+    display: none;
+}
+
+section.outro .mainp{
+    margin-bottom:100px;
+}
+
+section.outro .mainp ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.outro .mainp:last-child{
+    margin-bottom: 0;
+}
+
+section.outro .btn_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+section.outro .btn_wrap > *{
+    display: inline-block;
+    font-size: 14px;
+    background: #d4cac3;
+    padding: 5px 10px;
+    color: #FFF;
+    border-radius: 5px;
+}
+section.outro .btn_wrap > a{
+    width: 40px;
+    margin: 0 5px;
+    height: 40px;
+    /* line-height: 40px; */
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.outro .btn_wrap > button{
+    width: 90px;
+    margin-top:10px;
+}
+
+section.outro .btn_wrap i{
+    opacity: 0.6;
+}
+
+section.outro p.client{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+
+section.outro p.client span{
+    font-weight: 300;
+    margin-right: 5px;
+}
+
+section.outro .p_wrap{
+    margin-bottom:40px;
+}
+
+section.outro .p_wrap .mainp_tit{
+    margin-bottom:20px;
+}
+
+section.last{
+    background: linear-gradient(180deg, #fafafa,#fafafa, #e3d9d1);
+    padding-bottom: 100px;
+}
+
+.vertical_line{
+    display: flex;
+    height: 70px;
+    padding: 10px 0;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.vertical_line span{
+    width: 1px;
+    height: 100%;
+    background: #d8d8d8;
+}
+.line{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 500;
+}
+.line::after{
+    content: '';
+    position: absolute;
+    top:4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    display: block;
+    right: -7px;
+}
+
+.line sup{
+    vertical-align: inherit;
+    font-size:60%;
+}
+.line.no5::after{
+    background-color: #8248d6;
+}
+
+.line.no3::after{
+    background-color:#f79a42;
+}
+
+.line.bl::after{
+    background-color:#2073d1;
+}
+
+.line.gn::after{
+    background-color:#0de24d;
+}
+
+
+.animatable{
+    visibility: hidden;
+    animation-play-state: paused;
+}
+
+.animated{
+    animation-name:fadeInUp;
+    visibility: visible;
+    animation-fill-mode:both;
+    animation-duration: 2s;
+    animation-play-state: running;
+}
+
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer{
+    padding: 10px 0;
+    font-size:13px;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    background: #e3d9d1;
+    color: #7f7f7f;
+}
